@@ -323,3 +323,156 @@ h2{
         }
     }
 }
+
+//Support
+.support{
+    .sectionContainer{
+        .titlesDiv{
+            text-align: center;
+            small{
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 11px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+        .infoDiv{
+            margin-top: 2rem;
+            gap: 1.5rem;
+
+            .textDiv{
+                gap: 1.5rem;
+
+                .singleInfo{
+                    .number{
+                        background: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--whiteColor);
+                    }
+                    .colorOne{
+                        background: var(--colorOne);
+                    }
+                    .colorTwo{
+                        background: var(--colorTwo);
+                    }
+
+                }
+            }
+            .imgDiv{
+                margin: auto;
+                img{
+                    width: 200px;
+                    height: 250px;
+                    border-radius: 6rem;
+                    margin-right: -20px;
+                }
+            }
+        }
+
+    }
+    
+}
+
+
+// Info
+
+.info{
+    background: var(--SecondaryColor);
+    .infoContainer{
+        .titleDiv{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        justify-content: space-between;
+        }
+
+        .cardsDiv{
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            .singleCard{
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+
+                .iconDiv{
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+
+                    .icon{
+                        color: var(--whiteColor);
+                    }
+
+                }
+                .cardTitle{
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+                .colorOne{
+                    background: var(--colorOne);
+                }
+                .colorTwo{
+                    background: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
+
+//Lounge
+
+.lounge{
+    .sectionContainer{
+        gap: 1.5rem;
+        .imgDiv{
+            margin: auto;
+            position: relative;
+            padding: 2rem;
+            img{
+                width: 190px;
+                height: 250px;
+                border-radius: 6rem;
+               
+            }
+            img:nth-last-child(1){
+                position: absolute;
+                width: 190px;
+                height: 250px;
+                border-radius: 6rem;
+                left: 100px;
+                top: 50px;
+            }
+        }
+        .textDiv{
+            .grids{
+                margin-top: 1rem;
+                gap: 1.5rem;
+
+                .singleGrid{
+                    .gridTitle{
+                        display: block;
+                        padding-bottom: .5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+                    }
+                }
+            }
+        }
+    }
+}

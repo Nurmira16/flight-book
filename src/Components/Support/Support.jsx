@@ -20,17 +20,23 @@ const Support = () => {
             </div>
 
             <div className='singleInfo'>
-              <span className='number'>02</span>
+              <span className='number colorOne'>02</span>
               <h4>Chauffeur services at your arrival</h4>
               <p>Find help with booking an travel plans, see what to expect along the journey to your favourite destinations!</p>
             </div>
 
             <div className='singleInfo'>
-              <span className='number'>03</span>
+              <span className='number colorTwo'>03</span>
               <h4>Multi-risk travel insurance</h4>
               <p>Find help with booking an travel plans, see what to expect along the journey to your favourite destinations!</p>
             </div>
 
+          </div>
+
+          <div className='imgDiv'>
+            <img src='src/assets/window1.jpg'/>
+            <img src="src/assets/window2.jpg" alt="" />
+            <img src="src/assets/window3.jpg" alt="" />
           </div>
         </div>
       </div>
