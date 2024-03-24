@@ -476,3 +476,197 @@ h2{
         }
     }
 }
+
+// travelers
+
+.travelers{
+    .sectionContainer{
+        text-align: center;
+        .travelersContainer{
+            margin-top: 1rem;
+            gap: 1.5rem;
+
+            .singleTraveler{
+                position: relative;
+                height: 280px;
+                width: 85%;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+
+                .destinationImage, .travelerImage, .travelerName{
+                    position: absolute;
+                }
+                .destinationImage{
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                }
+
+                .travelerImage{
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    border: 5px solid rgba(225,225,225,0.637);
+                    transition: var(--transition);
+                    animation: animated 2.3s infinite;
+                }
+                @keyframes animated {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    50%{
+                        transform: translateY(8px);
+                    }
+                    100%{
+                        transform: translateY(0px);
+                    }
+
+                }
+                .travelerName{
+                    bottom: -100%;
+                    width: 100%;
+                    height: max-content;
+                    background: var(--whiteColor);
+                    padding: 1.5rem 1rem;
+                    transition: var(--transition);
+                    animation: animatedBorders 2.3s infinite;
+
+                    span{
+                        display: block;
+                        color: black;
+                        font-weight: 700;
+                    }
+                    p{
+                        color: var(--PrimaryColor);
+                        font-style: italic;
+                    }
+                }
+                @keyframes animatedBorders {
+                    0%{
+                       border-radius: 0;
+                    }
+                    50%{
+                        border-radius: 2rem;
+                    }
+                    100%{
+                        border-radius: 0;
+                    }
+                }
+                &:hover{
+                    .travelerName{
+                        bottom: 0;
+                        transition: 1s ease-in-out;
+                    }
+
+                    .travelerImage{
+                        bottom: 110px;
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Subscribe
+.subscribe{
+    background: var(--SecondaryColor);
+
+    .sectionContainer{
+        text-align: center;
+        .inputDiv{
+            margin-top: 1rem;
+            flex-direction: column;
+            background: var(--whiteColor);
+            border-radius: 1rem;
+
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &::placeholder{
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//Footer
+.footer{
+    background: var(--SecondaryColor);
+    .sectionContainer{
+        gap: 2.5rem;
+        .gridOne{
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                .Logo{
+                    width: 20%;
+                }
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .icon{
+                    height: 50px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: .4rem;
+                    color: var(--greyText);
+
+                    &:hover{
+                        background: var(--PrimaryColor);
+                        transform: translateY(-7px);
+                        transition: var(--transition);
+                        border: 1px solid var(--PrimaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        .footerLinks{
+            display: grid;
+            .linkTitle{
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li a {
+                display: block;
+                color: var(--greyText);
+                transition: var(--transition);
+
+                &:hover{
+                    transform: translateX(7px);
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
+    }
+}
